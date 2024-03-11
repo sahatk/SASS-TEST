@@ -1,0 +1,47 @@
+body .container {
+  background-color: orange;
+}
+
+body {
+  background-color: royalblue;
+}
+
+.container h1 {
+  color: royalblue;
+}
+
+.container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.container-item .item {
+  width: 80px;
+  height: 80px;
+  background-color: green;
+}
+.container-item .fs-small {
+  font-size: 12px;
+}
+.container-item .fs-medium {
+  font-size: 12px;
+}
+.container-item .fs-large {
+  font-size: 12px;
+}
+.container-item .fs-small {
+  font-size: 12px;
+}
+.container-item .fs-medium {
+  font-size: 14px;
+}
+.container-item .fs-large {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */

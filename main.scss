@@ -1,0 +1,57 @@
+@import "./sub" ,"./sub2";
+
+$color: royalblue;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box($size: 80px, $color: tomato) {
+    width: $size;
+    height: $size;
+    background-color: $color;
+}
+
+.container {
+    h1 {
+        color: $color;
+
+    }
+}
+
+.container-item {
+    @include flex-center;
+
+    @include box(200px, red);
+
+    margin: {
+        top: 50px; // margin-top
+        left: 50px; // margin-left
+    }
+
+    .item {
+        @include box($color: green);
+    }
+    
+    // 동일하다 .fs-???
+    .fs {
+        &-small {font-size: 12px;}
+        &-medium {font-size: 12px;}
+        &-large {font-size: 12px;}
+    }
+
+    // 동일하다 .fs-???
+    .fs-small {
+        font-size: 12px;
+    }
+
+    .fs-medium {
+        font-size: 14px;
+    }
+
+    .fs-large {
+        font-size: 16px;
+    }
+}
